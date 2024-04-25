@@ -1,8 +1,8 @@
 <h1 align="center">
-jmh.dev
+  jmh.dev
 </h1>
 
-1. Getting started
+1. **Getting started**
 
     Navigate into the directory where you cloned the repository and start it up.
 
@@ -11,6 +11,6 @@ jmh.dev
     npm run develop
     ```
 
-1.  **Open the code and start customizing!**
+1. **Open the code and start developing**
 
-    Your site is now running at http://localhost:8000!
+    Your site is now running at <http://localhost:8000>!
