@@ -4,7 +4,7 @@
 
 1. **Getting started**
 
-    Navigate into the directory where you cloned the repository and start it up.
+    Navigate into the directory where you cloned the repository and run the following commands:
 
     ```shell
     cd path-to-repo/
