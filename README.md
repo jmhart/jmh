@@ -1,6 +1,5 @@
-<h1 align="center">
-  jmh.dev
-</h1>
+
+# jmh.dev
 
 1. **Getting started**
 
