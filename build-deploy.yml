@@ -1,0 +1,28 @@
+# Build and Deploy application
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm install -g gatsby-cli
+    gatsby build
+  displayName: 'npm install and build'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: '<Your-Azure-Subscription>'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az storage blob upload-batch --account-name <Your-Storage-Account-Name> --source public --destination '$web'
+  displayName: 'Deploy to Azure Storage Account'
