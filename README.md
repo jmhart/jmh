@@ -1,15 +1,32 @@
 
 # jmh.dev
 
-1. **Getting started**
+[https://www.jmh.dev](https://www.jmh.dev)
 
-    Navigate into the directory where you cloned the repository and run the following commands:
+## Getting started
+
+1. **Navigate into the directory where you cloned the repository:**
+
+   ```shell
+   cd path-to-repo/
+   ```
+
+1. **Then run the following command:**
 
     ```shell
-    cd path-to-repo/
     npm run develop
     ```
 
-1. **Open the code and start developing**
+1. **The site is now running...**
 
-    Your site is now running at <http://localhost:8000>!
+   You can now view the app in the browser:
+
+   ```shell
+   http://localhost:8000/
+   ```
+
+   View GraphiQL, an in-browser IDE, to explore your site's data and schema:
+
+   ```shell
+   http://localhost:8000/___graphql
+   ```
